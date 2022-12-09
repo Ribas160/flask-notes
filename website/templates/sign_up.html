@@ -2,4 +2,25 @@
 
 {% block title %} Sign Up {% endblock %}
 
-{% block content %} <h1>This is the Sign Up page</h1> {% endblock %}
+{% block content %}
+    <form method="POST" class="col-lg-8 ml-auto mr-auto">
+        <h3 class="text-center">Sign Up</h3>
+        <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" name="email" id="email" class="form-control" placeholder="Email">
+        </div>
+        <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input type="text" name="firstName" id="firstName" class="form-control" placeholder="First Name">
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" class="form-control" placeholder="Password">
+        </div>
+        <div class="form-group">
+            <label for="password_confirmation">Confirm password</label>
+            <input type="password" name="password_confirmation" id="password_confirmation" class="form-control" placeholder="Confirm password">
+        </div>
+        <button type="submit" class="btn btn-primary mt-4">Login</button>
+    </form>
+{% endblock %}
